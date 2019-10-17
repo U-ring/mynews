@@ -23,3 +23,6 @@ Route::group(['prefix' => 'admin'], function(){
 });
 
 Route::get('XXX','AAAController@bbb');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
