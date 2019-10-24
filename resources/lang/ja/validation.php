@@ -95,7 +95,7 @@ return [
     'numeric' => 'The :attribute must be a number.',
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
-    'regex' => 'The :attribute format is invalid.',
+    'regex' => 'The:attribute format is invalid.',
     'required' => ':attributeに入力が必要です。',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
@@ -147,13 +147,12 @@ return [
     */
 
     'attributes' => [
-        'title' => 'タイトル',
+        'title' => 'タイトル',    
         'body' => '本文',
         'yourname' => '氏名',
         'check' => '性別',
         'hobby' => '趣味',
-        'intr' => '自己紹介',
+        'intr' => '自己紹介'
     ],
-        
 
 ];
