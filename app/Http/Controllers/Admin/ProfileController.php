@@ -30,6 +30,7 @@ class ProfileController extends Controller
       $profile->check = $validatedDaTa['check'];
       $profile->hobby = $validatedDaTa['hobby'];
       $profile->intr = $validatedDaTa['intr'];
+      //$profile->fill($form); 
       $profile->save();
       return redirect('admin/profile/create');
     }
