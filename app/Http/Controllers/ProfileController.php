@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\HTML;
 
 use App\Profile;
 
+
 class ProfileController extends Controller
 {
   //
