@@ -2,6 +2,7 @@
 @section('taitle', 'Myプロフィール')
 
 @section('content')
+{{--コメント--}}
    <div class="container">
      <div class="row">
        <h2>Myプロフィール</h2>
