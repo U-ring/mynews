@@ -27,14 +27,9 @@ class ProfileController extends Controller
         
       $profile = new Profile();
       $profile_form = $request->all();
-      $profile->yourname = $validatedDaTa['yourname'];
-      $profile->check = $validatedDaTa['check'];
-      $profile->hobby = $validatedDaTa['hobby'];
-      $profile->intr = $validatedDaTa['intr'];
-
       unset($profile_form['_token']);
       
-      //$profile->fill($form); 
+      $profile->fill($profile_form); 
       $profile->save();
       return redirect('admin/profile/create');
     }
@@ -75,7 +70,7 @@ class ProfileController extends Controller
       $history->edited_at = Carbon::now();
       $history->save();
       
-    return redirect('admin/profile/');
+    return redirect('/profile/');
     }
 }
 
